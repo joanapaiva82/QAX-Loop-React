@@ -1,0 +1,3 @@
+# installers are distributed as release assets, never committed
+*.exe
+*.zip

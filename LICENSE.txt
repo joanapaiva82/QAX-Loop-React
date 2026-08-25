@@ -1,0 +1,44 @@
+QAX Loop
+Iterative bathymetry QC with cross-run failure tracking and multi-role review.
+(c) Reach Subsea.  All rights reserved.
+
+Please read this notice before installing.
+
+1. What this software is
+   QAX Loop is an in-house Reach Subsea application that drives the open-source
+   AusSeabed QAX grid checks and the GGOutlier depth-spike detector, and adds
+   cross-run failure tracking, a review workflow and client-ready PDF/XLSX
+   reports.  It installs a self-contained copy of Python and the libraries it
+   needs, so nothing else has to be installed on this computer.
+
+2. Use
+   Reach Subsea grants you a free, non-exclusive licence to install and use
+   this copy for EVALUATION AND TESTING, and for internal use in connection
+   with survey deliverables.  You may pass the unmodified installer on to
+   colleagues for the same purpose.
+
+   You may not sell it, charge for access to it, present it as your own work,
+   or reverse-engineer it.  The source code remains proprietary to Reach
+   Subsea and is not distributed with this build.
+
+3. Third-party software
+   QAX Loop bundles open-source components, each under its own licence:
+     - GGOutlier (c) Guardian Geomatics / Paul Kennedy -- Apache-2.0
+     - AusSeabed QAX (mbesgc / findergc / qajson) -- open-source (AusSeabed,
+       NOAA OCS, UNH CCOM/JHC)
+     - Qt for Python (PySide6, shiboken6) -- LGPL-3.0
+     - GDAL, pyproj, rasterio, shapely, geopandas, numpy, pandas, scipy,
+       matplotlib, reportlab, openpyxl, pyshp, Pillow -- permissive
+       (MIT / BSD / PSF)
+   Full licence texts and the LGPL source-availability notice are installed in
+   the "licenses" folder next to the application, and each library's own licence
+   travels in its package metadata.  See Apache-2.0.txt, PySide6-LGPL-NOTICE.txt
+   and THIRD_PARTY_LICENSES.txt.
+
+4. No warranty
+   The software is provided "AS IS", without warranty of any kind, express or
+   implied.  To the maximum extent permitted by law, Reach Subsea and the
+   authors of the bundled components accept no liability for any damages arising
+   from its use.
+
+By clicking "I accept" you agree to use the software on these terms.

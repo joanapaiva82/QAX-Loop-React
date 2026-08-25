@@ -1,0 +1,27 @@
+LGPL-3.0 components in QAX Loop -- source-availability notice
+============================================================
+
+QAX Loop's graphical interface uses the Qt for Python bindings
+(PySide6, PySide6-Essentials, PySide6-Addons, shiboken6) and the AusSeabed
+qajson model, which are licensed under the GNU Lesser General Public License,
+version 3 (LGPL-3.0).
+
+Compliance
+----------
+These components are distributed as SEPARATE, dynamically-loaded files inside
+the bundled Python environment
+(app\python\Lib\site-packages\PySide6\ , ...\shiboken6\ , ...\ausseabed\qajson\).
+They are NOT statically linked into a single executable and NOT modified.  The
+end user is therefore free to replace these components with a compatible
+version of their choosing, as the LGPL permits.
+
+- The full LGPL-3.0 text (and the GPL-3.0 text it references) is included with
+  each component in its dist-info / license folder inside the bundle.
+- The unmodified upstream sources are available from the Qt Project
+  (https://download.qt.io/official_releases/QtForPython/) and from
+  https://github.com/ausseabed/qajson .
+- The complete corresponding source for these LGPL components is also available
+  on request from Reach Subsea at no charge.
+
+QAX Loop's own code and the permissively-licensed dependencies are covered by
+their respective licenses (see THIRD_PARTY_LICENSES.txt).

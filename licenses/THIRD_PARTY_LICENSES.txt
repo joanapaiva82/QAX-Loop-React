@@ -1,0 +1,46 @@
+QAX Loop -- Third-party components and their licenses
+=====================================================
+
+QAX Loop bundles a private Python runtime and the open-source libraries it
+depends on.  Each library's own full licence text travels inside the bundle in
+its metadata folder (app\python\Lib\site-packages\<name>-<version>.dist-info\).
+This file is a summary; where a full text is required it is included alongside
+(see Apache-2.0.txt) or found in the dist-info folder noted above.
+
+Component                     Version      Licence
+---------------------------   ----------   ---------------------------------
+GGOutlier (vendored)          --           Apache-2.0  (see Apache-2.0.txt)
+                                           (c) Guardian Geomatics / Paul Kennedy
+ausseabed.mbesgc              0.1.0        Apache-2.0  (see Apache-2.0.txt)
+ausseabed.findergc            0.1.3        Open-source (AusSeabed / NOAA / UNH)
+ausseabed.qajson              0.0.1        LGPL-3.0-only  (see PySide6-LGPL-NOTICE.txt note)
+PySide6 / Essentials / Addons 6.11.1       LGPL-3.0  (see PySide6-LGPL-NOTICE.txt)
+shiboken6                     6.11.1       LGPL-3.0  (see PySide6-LGPL-NOTICE.txt)
+GDAL (osgeo)                  3.12.2       MIT/X style
+pyproj                        3.7.2        MIT
+rasterio                      1.5.0        BSD-3-Clause
+shapely                       2.1.2        BSD-3-Clause
+pyogrio                       0.12.1       MIT
+geopandas                     1.1.3        BSD-3-Clause
+numpy                         2.4.6        BSD-3-Clause
+pandas                        3.0.3        BSD-3-Clause
+scipy                         1.17.1       BSD-3-Clause
+matplotlib                    3.10.9       Matplotlib (PSF-based, BSD-compatible)
+reportlab                     4.5.1        BSD
+openpyxl                      3.1.5        MIT
+pyshp (shapefile)             3.0.8        MIT
+Pillow                        12.2.0       MIT-CMU / HPND
+Python                        3.14         PSF License
+
+Notes
+-----
+- PySide6 / shiboken6 / ausseabed.qajson are LGPL-3.0 and are shipped as
+  loose, dynamically-loaded files (not statically linked); see
+  PySide6-LGPL-NOTICE.txt for the source-availability statement that satisfies
+  the LGPL for all three.
+- PyMuPDF (AGPL-3.0) is NOT included: it is not used by the application and is
+  removed from the bundle during the build.
+- The two AusSeabed engines whose metadata does not declare a SPDX id are
+  open-source projects of AusSeabed / NOAA OCS / UNH CCOM-JHC
+  (https://github.com/ausseabed); their repositories carry the authoritative
+  licence.
