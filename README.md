@@ -1,5 +1,16 @@
 # QAX Loop React
 
+> ## Please read before you use this
+>
+> **QAX Loop React is in active development and does not replace AusSeabed
+> QAX.** It is published here for **evaluation and testing only**.
+>
+> **Final quality control of survey deliverables must be carried out with
+> QAX GA.** Anything produced by this application should be treated as
+> indicative, and checked against QAX GA before it is relied upon or
+> delivered to a client.
+
+
 Iterative bathymetry QC for hydrographic surveys. QAX Loop runs the
 [AusSeabed QAX](https://github.com/ausseabed) grid checks over delivered
 depth surfaces, remembers every finding from one delivery to the next, and
@@ -60,6 +71,18 @@ us for the DEMO01 evaluation dataset: a synthetic survey block delivered at
 1, 2, 4 and 8 m across three revisions with defects planted for every
 check, plus the boundary and feature shapefiles. It is fully synthetic, so
 there is no data-sharing question.
+
+## Status and intended use
+
+This is a development build. The checks it runs are the AusSeabed QAX
+engines, used unmodified and pinned to specific upstream commits, so the
+numbers should agree with QAX GA - but the surrounding application (the
+cross-run registry, the review workflow, the reports) is still evolving,
+and behaviour can change between releases.
+
+Use it to explore the workflow and to give feedback. **Do not use it as
+the QC of record.** For final quality control of survey deliverables, use
+QAX GA.
 
 ## Licence
 
