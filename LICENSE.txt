@@ -4,6 +4,13 @@ Iterative bathymetry QC with cross-run failure tracking and multi-role review.
 
 Please read this notice before installing.
 
+0. Development status - important
+   QAX Loop is in active development and DOES NOT REPLACE AusSeabed QAX.
+   This build is provided for evaluation and testing.  FINAL QUALITY
+   CONTROL OF SURVEY DELIVERABLES MUST BE CARRIED OUT WITH QAX GA.  Treat
+   results produced by this software as indicative, and check them against
+   QAX GA before relying on them or issuing them to a client.
+
 1. What this software is
    QAX Loop is an in-house Reach Subsea application that drives the open-source
    AusSeabed QAX grid checks and the GGOutlier depth-spike detector, and adds
